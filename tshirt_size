@@ -1,0 +1,13 @@
+def size(cms):
+  if cms<38
+    return 's'
+  elif cms<42
+    return 'm'
+  else:
+      return 'l'
+
+assert(size(36) == 's')
+assert(size(38) == 'm')
+assert(size(40) == 'm')
+assert(size(45) == 'l')
+print("all is welled')
