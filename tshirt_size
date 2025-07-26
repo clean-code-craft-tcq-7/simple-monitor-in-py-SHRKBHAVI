@@ -1,10 +1,12 @@
 def size(cms):
+  char return_size ='\0'
   if cms < 38:
-    return 's'
+    return_size = 'S'
   elif (cms>= 38 and cms <= 42): 
-    return 'm'
+    return_size = 'M'
   else:
-      return 'l'
+      return_size = 'L'
+return (return_size)
 
 assert(size(36) == 's')
 assert(size(38) == 'm')
