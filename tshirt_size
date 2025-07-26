@@ -1,15 +1,13 @@
 def size(cms):
-  char return_size ='\0'
   if cms < 38:
-    return_size = 'S'
+    return 'S'
   elif (cms>= 38 and cms <= 42): 
-    return_size = 'M'
+    return 'M'
   else:
-      return_size = 'L'
-return (return_size)
+      return = 'L'
 
-assert(size(36) == 's')
-assert(size(38) == 'm')
-assert(size(40) == 'm')
-assert(size(45) == 'l')
+assert(size(36) == 'S')
+assert(size(38) == 'M')
+assert(size(40) == 'M')
+assert(size(45) == 'L')
 print("all is welled")
